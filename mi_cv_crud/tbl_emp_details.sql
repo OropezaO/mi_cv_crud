@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS `tbl_emp_details` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `department` VARCHAR(255) NOT NULL,
+  `name` VARCHAR(255) NOT NULL,
+  `email` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`id`)
+);

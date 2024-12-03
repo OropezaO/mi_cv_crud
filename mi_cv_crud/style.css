@@ -1,0 +1,462 @@
+/* Esquema de colores inspirado en Superhuman */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF; /* Fondo blanco limpio */
+    color: #333333; /* Texto oscuro */
+}
+
+header {
+    background: #FFFFFF; /* Fondo blanco */
+    color: #0077FF; /* Azul vibrante para encabezados */
+    padding: 1.5rem 0;
+    text-align: center;
+    border-bottom: 2px solid #F4F4F4; /* Separador sutil */
+}
+
+main {
+    padding: 2rem;
+}
+
+h2 {
+    color: #0077FF; /* Azul vibrante */
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #F4F4F4;
+    padding-bottom: 0.5rem;
+}
+
+form {
+    background: #F4F4F4; /* Fondo gris claro */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+form input, form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    background: #FFFFFF;
+    color: #333333;
+}
+
+form button {
+    background: #0077FF;
+    color: #FFFFFF;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #0056CC; /* Azul más oscuro al pasar el cursor */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+table th, table td {
+    border: 1px solid #CCCCCC;
+    padding: 0.8rem;
+    text-align: left;
+}
+
+table th {
+    background: #F4F4F4;
+    color: #0077FF; /* Azul vibrante para encabezados */
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background: #FAFAFA;
+}
+
+/*============== Perfil general Section ==============*/
+
+
+/* Sección de perfil general */
+#perfil {
+  background-color: #0077FF; /* Fondo azul vibrante */
+  color: #FFFFFF; /* Texto blanco */
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.perfil-introduccion {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.perfil-introduccion h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.perfil-introduccion p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #DCE7F7; /* Azul claro */
+}
+
+.perfil-tarjetas {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #FFFFFF; /* Fondo blanco */
+  color: #333333; /* Texto oscuro */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta {
+  background: #F4F4F4; /* Fondo gris claro */
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  width: 30%;
+  margin: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05); /* Efecto al pasar el cursor */
+}
+
+.icono img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.tarjeta h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #0077FF; /* Azul vibrante */
+}
+
+.tarjeta p {
+  font-size: 1rem;
+  color: #555555; /* Gris medio */
+}
+
+
+
+
+
+/*============== HERO Section ==============*/
+
+/* Hero Section */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #0A192F; /* Fondo oscuro */
+  color: #ECECEC; /* Texto claro */
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero-photo {
+  width: 420px;
+  height: 680px;
+  border-radius: 15%; /* Foto circular */
+  margin-bottom: 1.5rem;
+  border: 3px solid #0077FF; /* Borde azul vibrante */
+}
+
+#hero h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+  color: #FFFFFF; /* Texto blanco */
+}
+
+#hero h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #64FFDA; /* Verde vibrante */
+}
+
+#hero p {
+  font-size: 1rem;
+  color: #A8B2D1; /* Azul claro */
+  margin-bottom: 2rem;
+}
+
+.scroll-down {
+  display: inline-block;
+  font-size: 2rem;
+  color: #64FFDA;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.scroll-down:hover {
+  transform: scale(1.2); /* Efecto al pasar el cursor */
+}
+
+.scroll-down span {
+  display: block;
+  animation: bounce 1.5s infinite; /* Animación de rebote */
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*============== Sección de habilidades ==============*/
+
+/* Sección de habilidades */
+#habilidades {
+  padding: 2rem;
+  background-color: #FFFFFF; /* Fondo blanco */
+  color: #333333; /* Texto oscuro */
+  text-align: center;
+}
+
+#habilidades h2 {
+  color: #0077FF; /* Azul vibrante */
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.carrusel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.fila {
+  display: flex;
+  gap: 1rem;
+  animation: mover-derecha 10s linear infinite;
+}
+
+.fila.inversa {
+  animation: mover-izquierda 10s linear infinite;
+}
+
+.tarjeta {
+  flex: 0 0 20%; /* Cada tarjeta ocupa el 20% del espacio */
+  background: #F4F4F4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.tarjeta p {
+  font-size: 1rem;
+  color: #555555;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05); /* Efecto al pasar el cursor */
+}
+
+/* Animaciones */
+@keyframes mover-derecha {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes mover-izquierda {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+
+/*============== Sección de experiencia laboral ==============*/
+#experiencia {
+  padding: 2rem;
+  background-color: #FFFFFF; /* Fondo blanco */
+  color: #333333; /* Texto oscuro */
+}
+
+#experiencia h2 {
+  color: #0077FF; /* Azul vibrante */
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.experiencia-item {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #CCCCCC; /* Borde gris claro */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.experiencia-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.experiencia-header .fecha {
+  font-size: 0.9rem;
+  color: #555555; /* Gris medio */
+}
+
+.experiencia-item h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #0077FF; /* Azul vibrante */
+}
+
+.experiencia-item p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #555555; /* Gris medio */
+}
+
+.habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.habilidades li {
+  list-style: none;
+  background-color: #F4F4F4; /* Fondo gris claro */
+  color: #0077FF; /* Azul vibrante */
+  padding: 0.3rem 0.7rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+/* Sección de Portafolio */
+#portafolio {
+  padding: 3rem 1rem;
+  background-color: #FFFFFF; /* Fondo blanco */
+  color: #333333; /* Texto oscuro */
+  text-align: center;
+}
+
+.portafolio-titulo h2 {
+  font-size: 2rem;
+  color: #0077FF; /* Azul vibrante */
+  margin-bottom: 0.5rem;
+}
+
+.portafolio-titulo p {
+  font-size: 1.2rem;
+  color: #555555; /* Gris medio */
+  margin-bottom: 2rem;
+}
+
+.portafolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  align-items: start;
+}
+
+.tarjeta {
+  background: #F4F4F4; /* Fondo gris claro */
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05); /* Efecto al pasar el cursor */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+.tarjeta img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.tarjeta h3 {
+  font-size: 1.5rem;
+  color: #0077FF; /* Azul vibrante */
+  margin-bottom: 0.5rem;
+}
+
+.tarjeta p {
+  font-size: 1rem;
+  color: #555555; /* Gris medio */
+  margin-bottom: 1rem;
+}
+
+.tarjeta a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #0077FF; /* Azul vibrante */
+  color: #FFFFFF; /* Texto blanco */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.tarjeta a:hover {
+  background-color: #0056CC; /* Azul más oscuro */
+  transform: scale(1.05); /* Efecto al pasar el cursor */
+}
